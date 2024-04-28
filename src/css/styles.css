@@ -1,1 +1,65 @@
-body { background: tomato }
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1088px;
+}
+
+.hero {
+    position: relative;
+}
+
+.page-header {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-nav-list {
+    display: flex;
+    gap: 10px;
+}
+
+.page-nav-link {
+    padding: 30px 10px;
+}
+
+.page-nav-link a {
+    color: white;
+}
+
+.page-nav-link:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    min-height: calc(100vh - 20px);
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-cta {
+    background: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid black;
+    border-radius: 100px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
