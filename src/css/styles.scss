@@ -18,10 +18,12 @@
     color: white;
 }
 
-.page-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.page-header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .page-nav-list {
