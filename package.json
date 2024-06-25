@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://patrykrudzinski.github.io/car_sharing/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy" : "vite build",
+    "deploy" : "gh-pages -d src/dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.77.6",
     "vite": "^5.2.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
